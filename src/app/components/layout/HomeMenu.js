@@ -6,7 +6,7 @@ const HomeMenu = () => {
     return (
       <div className=''>
         <div className='absolute left-0 right-0 w-full justify-start'>
-        <div className=' absolute -left-16 -top-20 -z-10'>
+        <div className=' absolute left-52 --top-14 -z-10'>
             <Image src={"/cilantro-1.png"}  alt={'menu'} width={109} height={195}/>
         </div>
         {/* <div className='absolute -top-20 right-0 -z-10'>

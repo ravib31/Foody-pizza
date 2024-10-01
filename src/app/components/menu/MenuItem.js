@@ -6,7 +6,7 @@ const MenuItem = () => {
     
        
         <div className='bg-lime-200 p-4 rounded-lg text-center'>
-            <Image src={'/pizza-2.jpg'} alt="pizza" width={220} height={195}/>
+            <Image src={'/pizza-2.jpg'} alt="pizza" width={250} height={195}/>
             <h4 className='font-semibold text-xl my-3'>Chicken Pizza</h4>
             <p className='text-gray-500 text-sm'>Description
             </p>
