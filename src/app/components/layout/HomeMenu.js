@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import MenuItem from '../menu/MenuItem'
+import SectionHeaders from './SectionHeaders'
 
 const HomeMenu = () => {
     return (
@@ -13,10 +14,10 @@ const HomeMenu = () => {
             <Image src={"/cilantro-2.png"}  alt={'menu'} width={200} height={350}/>
         </div> */}
         </div>
-      <div className='text-center mb-4'>
-        <h3 className='uppercase text-gray-500 font-semibold leading-3'>Check Out</h3>
-        <h2 className='uppercase text-orange-500 font-bold text-4xl '>Menu</h2>
-    </div>
+
+        <div className='text-center mb-4'>
+          <SectionHeaders subHeader={'Check Out'} mainHeader={'Menu'}/>
+        </div>
     <div className='grid grid-cols-3 gap-4'>
     <MenuItem/>
     <MenuItem/>
