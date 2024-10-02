@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "./components/layout/Header";
 import Hero from "./components/layout/Hero";
 import HomeMenu from "./components/layout/HomeMenu";
 import SectionHeaders from "./components/layout/SectionHeaders";
@@ -8,7 +7,7 @@ import SectionHeaders from "./components/layout/SectionHeaders";
 export default function Home() {
   return (
     <div>
-      <Header />
+     
       <Hero />
       <HomeMenu />
       <section className="text-center my-12 mt-4">
@@ -34,9 +33,7 @@ export default function Home() {
         <a className='text-4xl' href='+0123456789'>+0123456789</a>
         </div>
       </section>
-      <footer className='border-t p-8 text-center text-gray-500 mt-16'>
-             &copy;रV 2024 All rights reserved
-      </footer>
+      
     </div>
   );
 }
