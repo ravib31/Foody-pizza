@@ -1,5 +1,6 @@
 
 import { model, models, Schema } from 'mongoose';
+import bcrypt from "bcrypt";
 
 const UserSchema = new Schema({
   email: { type: String, required: true, unique: true },
@@ -10,5 +11,13 @@ const UserSchema = new Schema({
     }
   } },
 },{timestamps:true});
+
+UserSchema.post('validate',function(user){
+  console.log(user);
+  console.log(user.password)
+  const notHashedPass = user.password;
+  const salt = bcrypt.genSaltSync(10);
+  user.password = bcrypt.hashSync(notHashedPass, salt);
+})
 
 export const User = models?.User || model("User", UserSchema);
