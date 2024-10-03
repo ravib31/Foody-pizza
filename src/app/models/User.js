@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 
 const UserSchema = new Schema({
   email: { type: String, required: true, unique: true },
-  password: { type: String, required: true, validate:pass => {
+  password: { type: String, validate:pass => {
     if(!pass.length || pass.length < 6) {
        new Error("Password must be at least 6 characters long");
        return false;

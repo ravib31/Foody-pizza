@@ -27,7 +27,7 @@ const Header = () => {
         ) : session ? (
           <>
           {/* <Image src={session.user.image} alt="user" width={40} height={40} className="rounded-full" /> */}
-            <Link href={'/profile'} className="text-white whitespace-nowrap">Welcome, {session?.user?.email.slice(0, 4)}</Link>
+            <Link href={'/profile'} className="text-black whitespace-nowrap">Welcome, {session?.user?.name.slice(0, 4)}</Link>
             <button
               className="bg-orange-600 rounded-full text-white px-8 py-2"
               onClick={() => signOut()}
