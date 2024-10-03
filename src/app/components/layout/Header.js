@@ -1,5 +1,6 @@
 'use client';
 import { signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -25,7 +26,8 @@ const Header = () => {
           <p>Loading...</p>
         ) : session ? (
           <>
-            <p className="text-white">Welcome, {session.user.email.split('@')[0]}</p>
+          {/* <Image src={session.user.image} alt="user" width={40} height={40} className="rounded-full" /> */}
+            <Link href={'/profile'} className="text-white whitespace-nowrap">Welcome, {session?.user?.email.slice(0, 4)}</Link>
             <button
               className="bg-orange-600 rounded-full text-white px-8 py-2"
               onClick={() => signOut()}

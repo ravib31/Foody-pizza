@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="hero mt-4">
       <div className='py-12'>
-        <h1 className='text-4xl font-semibold '>You can't make everyone happy.<br/> You're not &nbsp; <span className='text-orange-600'>pizza</span></h1>
+        <h1 className='text-4xl font-semibold '>You can't make everyone happy.<br/> You're not &nbsp; <span className='text-orange-600'>Pizza</span></h1>
         <p className='my-6 text-gray-500'>Slice to meet you!</p>
         <div className='flex gap-4'>
             <button className='bg-orange-600 uppercase text-white rounded-full px-4 py-2 flex justify-center gap-2 text-sm items-center'>Order Now
